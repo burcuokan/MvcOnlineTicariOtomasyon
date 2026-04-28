@@ -1,0 +1,37 @@
+﻿@model MvcOnlineTicariOtomasyon.Models.Entities.Invoice
+@{
+    ViewBag.Title = "GetInvoice";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<h2>Fatura Güncelleme Sayfası</h2>
+@using (Html.BeginForm("UpdateInvoice", "Invoice", FormMethod.Post))
+{
+    @Html.HiddenFor(x => x.InvoiceID)
+    <br />
+    <label>Seri No</label>
+    @Html.TextBoxFor(x => x.InvoiceSerialNo, new { @class = "form-control" })
+    <br />
+    <label>Sıra No</label>
+    @Html.TextBoxFor(x => x.InvoiceSequenceNo, new { @class = "form-control" })
+    <br />
+    <label>Vergi Dairesi</label>
+    @Html.TextBoxFor(x => x.TaxOffice, new { @class = "form-control" })
+    <br />
+    <label>Tarih</label>
+    @Html.TextBoxFor(x => x.Date, new { @class = "form-control" })
+    <br />
+    <label>Saat</label>
+    @Html.TextBoxFor(x => x.Time, new { @class = "form-control" })
+    <br />
+    <label>Teslim Eden</label>
+    @Html.TextBoxFor(x => x.Deliverer, new { @class = "form-control" })
+    <br />
+    <label>Teslim Aalan</label>
+    @Html.TextBoxFor(x => x.Receiver, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-warning">Güncelle</button>
+}
+
+

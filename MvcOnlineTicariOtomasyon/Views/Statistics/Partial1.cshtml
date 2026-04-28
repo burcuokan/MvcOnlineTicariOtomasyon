@@ -1,0 +1,69 @@
+﻿@model IEnumerable<MvcOnlineTicariOtomasyon.Models.Entities.ClassGroup2>
+<div class="card">
+    <div class="card-header">
+        <h3 class="card-title">Departman Personel Sayıları</h3>
+    </div>
+    <!-- /.card-header -->
+    <div class="card-body">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th style="width: 10px">#</th>
+                    <th>Departman</th>
+                    <th>Progress Bar</th>
+                    <th style="width: 40px">Sayı</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{ int sequencenumber = 0;}
+                @foreach (var x in Model)
+                {
+                    <tr>
+                        <td>@{sequencenumber++;} @sequencenumber.</td>
+                        <td>@x.Department</td>
+                        <td>
+                            @if (x.Number == 1)
+                            {
+                                <div class="progress progress-xs">
+                                    <div class="progress-bar progress-bar-danger" style="width:
+                                                    55%"></div>
+                                </div>
+                            }
+                            @if (x.Number == 2)
+                            {
+                                <div class="progress progress-xs">
+                                    <div class="progress-bar bg-warning" style="width: 70%"></div>
+                                    }
+                                </div>
+                            }
+                            @if (x.Number == 3)
+                            {
+                                <div class="progress progress-xs progress-striped active">
+                                    <div class="progress-bar bg-success" style="width: 90%"></div>
+                                </div>
+                            }
+                        </td>
+                        <td>
+                            @if (x.Number == 1)
+                            {
+                                <span class="badge bg-danger">@x.Number</span>
+
+                            }
+                            @if (x.Number == 2)
+                            {
+                                <span class="badge bg-warning">@x.Number</span>
+
+                            }
+                            @if (x.Number == 3)
+                            {
+                                <span class="badge bg-success">@x.Number</span>
+
+                            }
+                        </td>
+                    </tr>
+                            }
+                </tbody>
+        </table>
+    </div>
+    <!-- /.card-body -->
+</div>

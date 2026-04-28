@@ -1,0 +1,32 @@
+﻿@using MvcOnlineTicariOtomasyon.Models.Entities
+@model List<InvoiceItem>
+@{
+    ViewBag.Title = "InvoiceDetail";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<h2>Fatura Kalemleri Sayfası</h2>
+<br />
+<table class="table table-hover">
+    <tr>
+        <th>ID</th>
+        <th>Açıklama</th>
+        <th>Miktar</th>
+        <th>Birim Fiyat</th>
+        <th>Tutar</th>
+    </tr>
+    @foreach (var x in Model)
+    {
+        <tr>
+            <td>@x.InvoiceItemID</td>
+            <td>@x.Description</td>
+            <td>@x.Quantity</td>
+            <td>@x.UnitPrice</td>
+            <td>@x.TotalPrice</td>
+        </tr>
+    }
+</table>
+
+<a href="/Invoice/NewPen/" class="btn btn-default"style="background-color:darksalmon">Yeni Kalem Girişi</a>
+

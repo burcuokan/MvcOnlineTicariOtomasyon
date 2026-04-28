@@ -1,0 +1,28 @@
+﻿@model MvcOnlineTicariOtomasyon.Models.Entities.InvoiceItem
+@{
+    ViewBag.Title = "NewPen";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<h2>Yeni Kalem Girişi</h2>
+<br />
+<form class="form-group" method="post">
+    <label>Açıklama</label>
+    @Html.TextBoxFor(x => x.Description, new { @class = "form-control" })
+    <br />
+    <label>Miktar</label>
+    @Html.TextBoxFor(x => x.Quantity, new { @class = "form-control" })
+    <br />
+    <label>Birim Fiyat</label>
+    @Html.TextBoxFor(x => x.UnitPrice, new { @class = "form-control" })
+    <br />
+    <label>Tutar</label>
+    @Html.TextBoxFor(x => x.TotalPrice, new { @class = "form-control" })
+    <br />
+    <label>Fatura ID</label>
+    @Html.TextBoxFor(x => x.InvoiceID, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-info">Kaydet</button>
+</form>
+

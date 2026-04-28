@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<div class="d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+    <div class="card shadow-lg p-4" style="width: 450px; border-radius: 15px; border: none;">
+        <div class="card-body text-center">
+            <h3 class="mb-4" style="font-weight: 300; color: #333;">QR Kod Oluşturucu</h3>
+
+            @using (Html.BeginForm("Index", "QR", FormMethod.Post))
+            {
+                <input type="text" name="code" />
+                <input type="submit" value="QR Oluştur" />
+            }
+            <br />
+            @if (ViewBag.qRCodeimage != null)
+            {
+                <img src="@ViewBag.qRCodeimage" alt="" style="width:400px; height:400px" />
+            }
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,31 @@
+﻿@model MvcOnlineTicariOtomasyon.Models.Entities.SaleHistory
+@{
+    ViewBag.Title = "AddSales";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<h2>Yeni Satış Sayfası</h2>
+<br />
+<form class="form-group" method="post">
+    <label>Ürün Adı</label>
+    @Html.DropDownListFor(x => x.ProductID, (List<SelectListItem>)ViewBag.prd, "--- Ürün Seç ---", new { @class = "form-control" })
+    <br />
+    <label>Müşteri</label>
+    @Html.DropDownListFor(x => x.CustomerID, (List<SelectListItem>)ViewBag.cst, "--- Müşteri Seç ---", new { @class = "form-control" })
+    <br />
+    <label>Personel</label>
+    @Html.DropDownListFor(x => x.EmployeeID, (List<SelectListItem>)ViewBag.emp, "--- Personel Seç ---", new { @class = "form-control" })
+    <br />
+    <label>Adet</label>
+    @Html.TextBoxFor(x => x.Quantity, new { @class = "form-control" })
+    <br />
+    <label>Fiyat</label>
+    @Html.TextBoxFor(x => x.Price, new { @class = "form-control" })
+    <br />
+    <label>Toplam Tutar</label>
+    @Html.TextBoxFor(x => x.TotalPrice, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-info">Satış Yap</button>
+</form>
+

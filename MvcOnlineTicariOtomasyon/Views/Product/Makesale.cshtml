@@ -1,0 +1,44 @@
+﻿@model MvcOnlineTicariOtomasyon.Models.Entities.SaleHistory
+@{
+    ViewBag.Title = "Makesale";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<h2>Satış Yap</h2>
+<br />
+<form class="form-group" method="post">
+    <label>Ürün</label>
+    <input type="text" name="ProductID" value="@ViewBag.vls" class="form-control" readonly />
+    <br />
+    <label>Personel</label>
+    @Html.DropDownListFor(x => x.EmployeeID, (List<SelectListItem>)ViewBag.emp, "--- Personel Seç ---", new { @class = "form-control" })
+    <br />
+    <label>Müşteri</label>
+    @Html.TextBoxFor(x => x.CustomerID, new { @class = "form-control" })
+    <br />
+    <label>Adet</label>
+    <input type="number" name="Quantity" class="form-control" max="10" min="0" id="txt1" onchange="sum();" />
+    <br />
+    <label>Fiyat</label>
+    <input type="text" name="Price" value="@ViewBag.vls2" class="form-control" id="txt2" onkeyup="sum();" />
+    <br />
+    <label>Toplam Tutar</label>
+    <input type="text" name="TotalPrice" value="0" class="form-control" id="txt3" readonly />
+    <br />
+    <button class="btn btn-info">Satış Yap</button>
+</form>
+<br />
+<script>
+    function sum() {
+        var number1 = document.getElementById('txt1').value;
+        var number2 = document.getElementById('txt2').value;
+        var conclusion = parseInt(number1) * parseInt(number2);
+        if (!isNaN(conclusion)) {
+            document.getElementById('txt3').value = conclusion;
+        }
+    }
+</script>
+
+
+

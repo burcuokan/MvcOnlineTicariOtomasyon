@@ -1,0 +1,29 @@
+﻿@model MvcOnlineTicariOtomasyon.Models.Entities.Employee
+@{
+    ViewBag.Title = "GetEmployee";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<h2>Personel Güncelleme</h2>
+<br />
+@using (Html.BeginForm("UpdateEmployee", "Employee", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+<div class="form-group">
+    @Html.HiddenFor(x => x.EmployeeID)
+    <label>Personel Adı</label>
+    @Html.TextBoxFor(x => x.EmployeeName, new { @class = "form-control" })
+    <br />
+    <label>Soyad</label>
+    @Html.TextBoxFor(x => x.EmployeeSurname, new { @class = "form-control" })
+    <br />
+    <label>Görsel</label>
+    <input type="file" name="EmployeeImage" />
+    <br />
+    <label>Departman</label>
+    @Html.DropDownListFor(x => x.DepartmentID, (List<SelectListItem>)ViewBag.dpt, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-warning">Güncelle</button>
+</div>
+}
+

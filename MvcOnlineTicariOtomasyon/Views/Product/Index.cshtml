@@ -1,0 +1,49 @@
+﻿@using MvcOnlineTicariOtomasyon.Models.Entities
+@model List<Product>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<br />
+@using (Html.BeginForm("Index", "Product", FormMethod.Get))
+{
+    <p>
+        Ürün Adı: @Html.TextBox("p")
+        <input type="submit" value="Ara" />
+    </p>
+}
+<br />
+<h2>Ürünler</h2>
+<table class="table table-bordered">
+    <tr>
+        <th>Ürün Adı</th>
+        <th>Marka</th>
+        <th>Stok</th>
+        <th>Alış Fiyatı</th>
+        <th>Satış Fiyatı</th>
+        <th>Kategori</th>
+        <th>Görsel</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+        <th>Satış Yap</th>
+    </tr>
+    @foreach (var x in Model)
+    {
+        <tr>
+            <td>@x.ProductName</td>
+            <td>@x.Brand</td>
+            <td>@x.Stock</td>
+            <td>@x.PurshasePrice ₺</td>
+            <td>@x.SalePrice ₺</td>
+            <td>@x.Category.CategoryName</td>
+            <td>
+                <img src="@x.ProductImage" style="width:100px; height:50px;" />
+            </td>
+            <td><a href="/Product/DeleteProduct/@x.ProductID" class="btn btn-danger">Sil</a></td>
+            <td><a href="/Product/GetProduct/@x.ProductID" class="btn btn-success">Güncelle</a></td>
+            <td><a href="/Product/MakeSale/@x.ProductID" class="btn btn-default" style="background-color:#0094ff">Satış Yap</a></td>
+        </tr>
+    }
+</table>
+<a href="/Product/AddProduct/" class="btn btn-primary">Ürün Ekle</a>
+
