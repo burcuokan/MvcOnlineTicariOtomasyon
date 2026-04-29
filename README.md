@@ -8,15 +8,25 @@ Cari panelinde ise kullanıcılar kendi bilgilerini görüntüleyip düzenleyebi
 ---
 
 • Veri Yönetimi (CRUD): Kategori, ürün, departman, cari ve personel kayıtları üzerinde ekleme, silme, güncelleme ve listeleme işlemleri gerçekleştirilebilir. Ayrıca görev (To-Do) yönetimi de sistem üzerinden yapılabilir.
+
 • Raporlama (PDF/Excel): Ürün verileri PDF ve Excel formatlarında dışa aktarılabilir.
+
 • Satış Analizi: Personeller tarafından yapılan satış işlemleri detaylı şekilde görüntülenebilir ve analiz edilebilir.
+
 • Müşteri Takibi: Carilere ait geçmiş sipariş ve alışveriş hareketleri incelenebilir.
+
 • Görev ve QR Modülü: Yapılacak işler listesi oluşturulabilir, sistem üzerinden QR kod üretimi sağlanabilir.
+
 • Kargo Süreçleri: Kargo takip numarası ile gönderi durumu sorgulanabilir ve süreç yönetimi yapılabilir.
+
 • Ürün Görselleri: Ürünlere ait görseller sisteme eklenebilir.
+
 • İstatistik ve Grafikler: Google Charts entegrasyonu ile grafikler ve çeşitli istatistikler sunulur.
+
 • Personel Tablosu: Personellere ait satış verileri ve detaylı bilgiler tablolar halinde görüntülenebilir.
+
 • Satış İşlemleri: Ürün satışları gerçekleştirilebilir, mevcut satış kayıtları düzenlenebilir.
+
 • Faturalandırma: Yapılan satışlara bağlı olarak dinamik şekilde fatura oluşturulabilir.
 
 👤 **Cari Paneli Özellikleri :**
