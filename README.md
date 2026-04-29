@@ -7,37 +7,42 @@ Cari panelinde ise kullanıcılar kendi bilgilerini görüntüleyip düzenleyebi
 🔑 **Admin Paneli Özellikleri :**
 ---
 
-• Veri Yönetimi (CRUD): Kategori, ürün, departman, cari ve personel kayıtları üzerinde ekleme, silme, güncelleme ve listeleme işlemleri gerçekleştirilebilir. Ayrıca görev (To-Do) yönetimi de sistem üzerinden yapılabilir.
+• **Veri Yönetimi (CRUD):** Kategori, ürün, departman, cari ve personel kayıtları üzerinde ekleme, silme, güncelleme ve listeleme işlemleri gerçekleştirilebilir. Ayrıca görev (To-Do) yönetimi de sistem üzerinden yapılabilir.
 
-• Raporlama (PDF/Excel): Ürün verileri PDF ve Excel formatlarında dışa aktarılabilir.
+• **Raporlama (PDF/Excel):** Ürün verileri PDF ve Excel formatlarında dışa aktarılabilir.
 
-• Satış Analizi: Personeller tarafından yapılan satış işlemleri detaylı şekilde görüntülenebilir ve analiz edilebilir.
+• **Satış Analizi:** Personeller tarafından yapılan satış işlemleri detaylı şekilde görüntülenebilir ve analiz edilebilir.
 
-• Müşteri Takibi: Carilere ait geçmiş sipariş ve alışveriş hareketleri incelenebilir.
+• **Müşteri Takibi:** Carilere ait geçmiş sipariş ve alışveriş hareketleri incelenebilir.
 
-• Görev ve QR Modülü: Yapılacak işler listesi oluşturulabilir, sistem üzerinden QR kod üretimi sağlanabilir.
+• **Görev ve QR Modülü:** Yapılacak işler listesi oluşturulabilir, sistem üzerinden QR kod üretimi sağlanabilir.
 
-• Kargo Süreçleri: Kargo takip numarası ile gönderi durumu sorgulanabilir ve süreç yönetimi yapılabilir.
+• **Kargo Süreçleri:** Kargo takip numarası ile gönderi durumu sorgulanabilir ve süreç yönetimi yapılabilir.
 
-• Ürün Görselleri: Ürünlere ait görseller sisteme eklenebilir.
+• **Ürün Görselleri:** Ürünlere ait görseller sisteme eklenebilir.
 
-• İstatistik ve Grafikler: Google Charts entegrasyonu ile grafikler ve çeşitli istatistikler sunulur.
+• **İstatistik ve Grafikler:** Google Charts entegrasyonu ile grafikler ve çeşitli istatistikler sunulur.
 
-• Personel Tablosu: Personellere ait satış verileri ve detaylı bilgiler tablolar halinde görüntülenebilir.
+• **Personel Tablosu:** Personellere ait satış verileri ve detaylı bilgiler tablolar halinde görüntülenebilir.
 
-• Satış İşlemleri: Ürün satışları gerçekleştirilebilir, mevcut satış kayıtları düzenlenebilir.
+• **Satış İşlemleri:** Ürün satışları gerçekleştirilebilir, mevcut satış kayıtları düzenlenebilir.
 
-• Faturalandırma: Yapılan satışlara bağlı olarak dinamik şekilde fatura oluşturulabilir.
+• **Faturalandırma:** Yapılan satışlara bağlı olarak dinamik şekilde fatura oluşturulabilir.
 
 👤 **Cari Paneli Özellikleri :**
 ---
 
-• Sipariş Geçmişi: Kullanıcı, daha önce oluşturduğu siparişleri detaylı olarak görüntüleyebilir.
-• Sipariş Detayları: Toplam sipariş sayısı, satın alınan ürünler ve ödeme tutarları incelenebilir.
-• Duyuru Ekranı: Yönetici tarafından paylaşılan duyurular takip edilebilir.
-• Profil Yönetimi: Cari, kişisel bilgilerini güncelleyebilir ve profil düzenlemeleri yapabilir.
-• Kargo Sorgulama: QR kod veya takip numarası ile gönderi durumu kontrol edilebilir.
-• Mesajlaşma Sistemi: Kullanıcılar birbirleriyle mesaj alışverişinde bulunabilir.
+• **Sipariş Geçmişi:** Kullanıcı, daha önce oluşturduğu siparişleri detaylı olarak görüntüleyebilir.
+
+• **Sipariş Detayları:** Toplam sipariş sayısı, satın alınan ürünler ve ödeme tutarları incelenebilir.
+
+• **Duyuru Ekranı:** Yönetici tarafından paylaşılan duyurular takip edilebilir.
+
+• **Profil Yönetimi:** Cari, kişisel bilgilerini güncelleyebilir ve profil düzenlemeleri yapabilir.
+
+• **Kargo Sorgulama:** QR kod veya takip numarası ile gönderi durumu kontrol edilebilir.
+
+• **Mesajlaşma Sistemi:** Kullanıcılar birbirleriyle mesaj alışverişinde bulunabilir.
 
 📌 **Projede Kullanılan Teknolojiler**
 --
